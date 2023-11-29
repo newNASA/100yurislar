@@ -145,8 +145,6 @@ header nav .nav-bottom .right button {
   display: flex;
   align-items: center;
   margin-top: 50px;
-}
-.header .left .btn-2 .btn-sec a {
   color: #FFF;
   font-size: 16px;
   text-align: center;
@@ -715,82 +713,96 @@ section .seo .bottom {
   cursor: pointer;
 }
 
-.slider {
+.klient-section {
   width: 100%;
-  height: 600px;
+}
+.klient-section .klient {
+  margin: auto;
+}
+.klient-section .klient .top {
+  padding: 0 10%;
+}
+.klient-section .klient .top h1 {
+  color: var(--base-black, #140A32);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.96px;
+}
+.klient-section .klient .bottom {
   display: flex;
 }
-.slider .carusel {
-  width: 80%;
-  height: 100%;
-  margin: auto;
+.klient-section .klient .bottom .left,
+.klient-section .klient .bottom .right {
+  width: 10%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.slider .carusel .text-slider {
-  font-size: 30px;
-  font-weight: 600;
-}
-.slider .carusel .carusel-in {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-.slider .carusel .carusel-in .arrow {
-  width: 60px;
-  height: 60px;
-  margin-top: 17%;
+.klient-section .klient .bottom .left button,
+.klient-section .klient .bottom .right button {
+  width: 24px;
+  height: 24px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background: var(--gray-background, rgba(47, 43, 67, 0.04));
   cursor: pointer;
 }
-.slider .carusel .carusel-in .left-arrow {
-  background-image: url(img/chap.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-.slider .carusel .carusel-in .right-arrow {
-  background-image: url(img/ong.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-.slider .carusel .carusel-in .slide {
-  width: 90%;
-  height: 80%;
-  margin: auto;
+.klient-section .klient .bottom .center {
+  width: 80%;
   display: flex;
-  align-items: center;
-  overflow-x: hidden;
+  justify-content: space-between;
 }
-.slider .carusel .carusel-in .slide .slide-in {
+.klient-section .klient .bottom .center .cards {
+  width: 367px;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.klient-section .klient .bottom .center .cards .card-top {
   display: flex;
 }
-.slider .carusel .carusel-in .slide .slide-in .slide-all {
-  width: 400px;
-  height: 95%;
-  border-radius: 15px;
-  transition: 0.5s;
-  margin-right: 50px;
+.klient-section .klient .bottom .center .cards .card-top .card-right {
+  margin-left: 15px;
 }
-.slider .carusel .carusel-in .slide .slide-in .slide-all .slide-head {
-  display: flex;
-  align-items: center;
-  margin: 30px 60px;
-}
-.slider .carusel .carusel-in .slide .slide-in .slide-all .slide-text {
-  width: 70%;
-  margin: auto;
-}
-.slider .carusel .carusel-in .slide .slide-in .slide-all .slide-bottom {
-  width: 70%;
-  margin: auto;
-  color: #016f52;
-  margin-top: 60px;
+.klient-section .klient .bottom .center .cards .card-top .card-right p {
+  color: var(--base-black, #140A32);
   font-size: 18px;
+  font-weight: 600;
 }
-
-.slide1 {
-  margin-left: 1.3%;
+.klient-section .klient .bottom .center .cards .card-top .card-right span {
+  color: var(--gray-medium, rgba(47, 43, 67, 0.5));
+  font-size: 16px;
+  font-weight: 400;
+}
+.klient-section .klient .bottom .center .cards .card-center {
+  flex: 1;
+  padding-top: 24px;
+}
+.klient-section .klient .bottom .center .cards .card-center p {
+  color: var(--base-black, #140A32);
+  font-weight: 400;
+  line-height: 140%;
+}
+.klient-section .klient .bottom .center .cards .card-bottom {
+  padding-top: 24px;
+}
+.klient-section .klient .bottom .center .cards .card-bottom h5 {
+  color: var(--gray-medium, rgba(47, 43, 67, 0.5));
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: auto;
+}
+.klient-section .klient .bottom .center .cards .card-bottom p {
+  margin-top: 12px;
+  color: var(--green, #33836E);
+  font-weight: 600;
+  line-height: 150%;
+  /* 24px */
 }
 
 li .head-a {
