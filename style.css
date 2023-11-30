@@ -729,6 +729,7 @@ section .seo .bottom {
   letter-spacing: -0.96px;
 }
 .klient-section .klient .bottom {
+  overflow: hidden;
   display: flex;
 }
 .klient-section .klient .bottom .left,
@@ -752,10 +753,17 @@ section .seo .bottom {
 .klient-section .klient .bottom .center {
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
+  transition: 0.5s !important;
+  overflow: auto;
+}
+.klient-section .klient .bottom .center::-webkit-scrollbar {
+  display: none;
 }
 .klient-section .klient .bottom .center .cards {
-  width: 367px;
+  min-width: 367px;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 30px;
   border-radius: 20px;
   border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
@@ -802,7 +810,6 @@ section .seo .bottom {
   color: var(--green, #33836E);
   font-weight: 600;
   line-height: 150%;
-  /* 24px */
 }
 
 li .head-a {

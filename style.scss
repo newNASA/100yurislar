@@ -866,8 +866,9 @@ section {
                 letter-spacing: -0.96px;
             }
         }
-
+        
         .bottom {
+            overflow: hidden;
             display: flex;
 
             .left,
@@ -892,29 +893,34 @@ section {
             .center {
                 width: 80%;
                 display: flex;
-                justify-content: space-between;
-
+                gap: 30px;
+                transition: 0.5s !important;
+                overflow: auto;
+                &::-webkit-scrollbar{
+                    display: none;
+                }
                 .cards {
-                    width: 367px;
+                    min-width: 367px;
+                    width: fit-content; 
                     padding: 30px;
                     border-radius: 20px;
                     border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-
+                    
                     .card-top {
                         display: flex;
-
+            
                         .card-right {
                             margin-left: 15px;
-
+            
                             p {
                                 color: var(--base-black, #140A32);
                                 font-size: 18px;
                                 font-weight: 600;
                             }
-
+            
                             span {
                                 color: var(--gray-medium, rgba(47, 43, 67, 0.50));
                                 font-size: 16px;
@@ -922,38 +928,38 @@ section {
                             }
                         }
                     }
-
+            
                     .card-center {
                         flex: 1;
                         padding-top: 24px;
-
+            
                         p {
                             color: var(--base-black, #140A32);
                             font-weight: 400;
                             line-height: 140%;
                         }
                     }
-
+            
                     .card-bottom {
                         padding-top: 24px;
-
+            
                         h5 {
                             color: var(--gray-medium, rgba(47, 43, 67, 0.50));
                             font-size: 14px;
                             font-weight: 400;
                             margin-top: auto;
                         }
-
+            
                         p {
                             margin-top: 12px;
                             color: var(--green, #33836E);
                             font-weight: 600;
                             line-height: 150%;
-                            /* 24px */
                         }
                     }
                 }
             }
+            
         }
     }
 }
