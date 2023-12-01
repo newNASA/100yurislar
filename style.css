@@ -90,6 +90,11 @@ header nav .nav-bottom .left a {
   gap: 10px;
   border-radius: 10px;
   border: 1px solid rgba(47, 43, 67, 0.15);
+  transition: 0.5s;
+}
+header nav .nav-bottom .left a:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1921568627);
 }
 header nav .nav-bottom .center ul {
   display: flex;
@@ -457,7 +462,7 @@ section .bottom .card:hover img {
   display: block;
 }
 .choose .top .right {
-  background-image: url(./img/workers.png);
+  background-image: url(../img/workers.png);
   background-repeat: no-repeat;
 }
 .choose .bottom {
@@ -613,7 +618,7 @@ section .bottom .card:hover img {
   color: white;
   margin-bottom: 50px;
   background-color: #e5e5e5;
-  background-image: url(./img/iphone.png);
+  background-image: url(../img/iphone.png);
   background-repeat: no-repeat;
   background-position: right;
   padding: 30px;
@@ -1065,6 +1070,59 @@ footer .bottom div h2 {
 footer .bottom div a {
   color: var(--base-black, #140A32);
   font-weight: 400;
+}
+
+.zayavka {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  width: 100%;
+  height: 100vh;
+}
+.zayavka .container {
+  width: 896px;
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--base-white, #FFF);
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1);
+}
+.zayavka .container .top img {
+  float: right;
+  cursor: pointer;
+}
+.zayavka .container .bottom {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.zayavka .container .bottom h1 {
+  color: var(--base-black, #140A32);
+  font-weight: 700;
+  letter-spacing: -0.96px;
+  margin-top: 30px;
+}
+.zayavka .container .bottom p {
+  color: var(--base-black, #140A32);
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 10px;
+}
+.zayavka .container .bottom button {
+  padding: 16px 36px 18px 36px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background: var(--green, #33836E);
+  color: var(--base-white, #FFF);
+  font-weight: 600;
+  margin-top: 30px;
+  cursor: pointer;
 }
 
 li .head-a {
