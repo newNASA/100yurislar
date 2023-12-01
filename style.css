@@ -500,6 +500,7 @@ section .bottom .card:hover img {
 .choose .bottom .right .input-container input {
   display: flex;
   width: 249px;
+  position: relative;
   padding: 7px 16px 8px 16px;
   flex-direction: column;
   justify-content: center;
@@ -508,6 +509,24 @@ section .bottom .card:hover img {
   border-radius: 10px;
   outline: none;
   border: none;
+}
+.choose .bottom .right .input-container #input::-webkit-outer-spin-button, .choose .bottom .right .input-container #input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.choose .bottom .right .input-container label {
+  position: absolute;
+  margin-top: 17px;
+  margin-left: 15px;
+  color: grey;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.choose .bottom .right .input-container input:focus ~ .label,
+.choose .bottom .right .input-container input:valid ~ .label {
+  margin-top: 0px;
+  font-size: 15px;
+  color: #acacac;
 }
 .choose .bottom .right .input-container a {
   display: flex;
@@ -629,6 +648,10 @@ section .bottom .card:hover img {
   padding-left: 15px;
   margin-top: 22px;
 }
+.ask .right .input-container #input::-webkit-outer-spin-button, .ask .right .input-container #input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .ask .right .input-container label {
   position: absolute;
   top: 20px;
@@ -724,7 +747,6 @@ section .seo .bottom {
 }
 .klient-section .klient .top h1 {
   color: var(--base-black, #140A32);
-  font-size: 32px;
   font-weight: 700;
   letter-spacing: -0.96px;
 }
@@ -810,6 +832,207 @@ section .seo .bottom {
   color: var(--green, #33836E);
   font-weight: 600;
   line-height: 150%;
+}
+
+.yurist-portal {
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+}
+.yurist-portal .top h1 {
+  color: var(--base-black, #140A32);
+  font-weight: 700;
+  letter-spacing: -0.96px;
+}
+.yurist-portal .bottom {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.yurist-portal .bottom .bottom-left {
+  width: 39%;
+}
+.yurist-portal .bottom .bottom-left .yurist-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.yurist-portal .bottom .bottom-left .yurist-cards .yurist-card {
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+  display: flex;
+  padding: 20px;
+  transition: 0.5s;
+}
+.yurist-portal .bottom .bottom-left .yurist-cards .yurist-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1921568627);
+}
+.yurist-portal .bottom .bottom-left .yurist-cards .yurist-card .left {
+  display: flex;
+  justify-content: center;
+}
+.yurist-portal .bottom .bottom-left .yurist-cards .yurist-card .left img {
+  width: 70px;
+  height: 70px;
+}
+.yurist-portal .bottom .bottom-left .yurist-cards .yurist-card .right {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.yurist-portal .bottom .bottom-left .yurist-cards .yurist-card .right .yurist-name {
+  color: var(--base-black, #140A32);
+  font-size: 18px;
+  font-weight: 600;
+}
+.yurist-portal .bottom .bottom-left .yurist-cards .yurist-card .right .addres {
+  color: var(--base-black, #140A32);
+  font-size: 16px;
+  font-weight: 400;
+}
+.yurist-portal .bottom .bottom-left .yurist-cards .yurist-card .right span {
+  color: var(--gray-medium, rgba(47, 43, 67, 0.5));
+  font-size: 16px;
+  font-weight: 400;
+}
+.yurist-portal .bottom .bottom-left .yurist-cards a {
+  border-radius: 10px;
+  background: #E0ECE9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 36px 18px 36px;
+  color: var(--green, #33836E);
+  font-weight: 600;
+}
+.yurist-portal .bottom .bottom-right {
+  width: 59%;
+}
+.yurist-portal .bottom .bottom-right .container {
+  padding: 40px;
+  border-radius: 20px;
+  background: var(--green, #33836E);
+}
+.yurist-portal .bottom .bottom-right .container .con-top {
+  display: flex;
+  justify-content: space-between;
+}
+.yurist-portal .bottom .bottom-right .container .con-top h1 {
+  color: var(--base-white, #FFF);
+  font-weight: 700;
+  letter-spacing: -0.96px;
+}
+.yurist-portal .bottom .bottom-right .container .con-top .online {
+  display: flex;
+  padding: 5px 16px 6px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--base-white, #FFF);
+}
+.yurist-portal .bottom .bottom-right .container .con-bottom p {
+  color: var(--base-white, #FFF);
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.yurist-portal .bottom .bottom-right .container .con-bottom form {
+  margin-top: 30px;
+}
+.yurist-portal .bottom .bottom-right .container .con-bottom form textarea {
+  width: 100%;
+  height: 213px;
+  border-radius: 10px;
+  resize: none;
+  outline: none;
+  border: none;
+  padding: 12px 16px 8px 16px;
+}
+.yurist-portal .bottom .bottom-right .container .con-bottom form .flex-form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.yurist-portal .bottom .bottom-right .container .con-bottom form .flex-form .input-container {
+  position: relative;
+  width: 230px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.yurist-portal .bottom .bottom-right .container .con-bottom form .flex-form .input-container input {
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding-left: 15px;
+  margin-top: 22px;
+}
+.yurist-portal .bottom .bottom-right .container .con-bottom form .flex-form .input-container #input::-webkit-outer-spin-button, .yurist-portal .bottom .bottom-right .container .con-bottom form .flex-form .input-container #input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.yurist-portal .bottom .bottom-right .container .con-bottom form .flex-form .input-container label {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  color: grey;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.yurist-portal .bottom .bottom-right .container .con-bottom form .flex-form .input-container input:focus ~ .label,
+.yurist-portal .bottom .bottom-right .container .con-bottom form .flex-form .input-container input:valid ~ .label {
+  top: 3px;
+  font-size: 15px;
+  color: #acacac;
+}
+.yurist-portal .bottom .bottom-right .container .con-bottom form .flex-form input[type=submit] {
+  padding: 16px 24px 18px 24px;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--base-black, #140A32);
+  color: var(--base-white, #FFF);
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.yurist-portal .bottom .bottom-right .container .con-bottom p:nth-child(3) {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  font-weight: 600;
+}
+.yurist-portal .bottom .bottom-right .container .con-bottom .footer {
+  display: flex;
+  margin-top: 30px;
+}
+.yurist-portal .bottom .bottom-right .container .con-bottom .footer p {
+  margin-right: 42px;
+  color: var(--base-white, #FFF);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+}
+.yurist-portal .bottom .bottom-right .container .con-bottom .footer p:first-child::after, .yurist-portal .bottom .bottom-right .container .con-bottom .footer p:last-child::after {
+  color: var(--base-white, #FFF);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: block;
+  margin-top: 10px;
+}
+.yurist-portal .bottom .bottom-right .container .con-bottom .footer p:first-child::after {
+  content: "сейчас онлайн";
+}
+.yurist-portal .bottom .bottom-right .container .con-bottom .footer p:last-child::after {
+  content: "средняя скорость ответа";
 }
 
 li .head-a {
