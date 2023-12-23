@@ -133,7 +133,6 @@ header {
     }
 }
 
-
 .header {
     width: 80%;
     margin: auto;
@@ -170,7 +169,7 @@ header {
             display: flex;
 
             .btn-sec {
-
+                cursor: pointer;
                 padding: 12px 30px;
                 border: solid 2px #fff;
                 border-radius: 10px;
@@ -183,6 +182,13 @@ header {
                 text-align: center;
                 font-family: Open Sans;
                 font-weight: 600;
+                transition: 0.5s;
+
+                &:hover {
+                    border: #33836E solid;
+                    background-color: transparent;
+                    color: #33836E;
+                }
             }
 
             .btn-tel {
@@ -234,9 +240,7 @@ header {
     }
 }
 
-
 //  Help styling 
-
 section {
     width: 80%;
     margin: 0 auto;
@@ -284,6 +288,10 @@ section {
             font-weight: 400;
             line-height: 160%;
             margin-top: 15px;
+        }
+
+        .txt {
+            cursor: pointer;
         }
     }
 
@@ -344,7 +352,6 @@ section {
 }
 
 // Contact styling 1280
-
 .contact {
     margin-top: 80px !important;
     width: 80%;
@@ -358,7 +365,6 @@ section {
     margin-bottom: 50px;
 
     .left {
-
         width: 30%;
 
         img {
@@ -409,7 +415,6 @@ section {
 }
 
 // help you styling 1280
-
 .help-you {
     margin-top: 80px !important;
     width: 80%;
@@ -492,7 +497,6 @@ section {
 }
 
 //  choose styling 1280
-
 .choose {
     margin-top: 100px;
     width: 80%;
@@ -645,8 +649,11 @@ section {
                     color: #acacac;
                 }
 
-                a {
+                input[type="button"] {
+                    width: auto;
                     display: flex;
+                    cursor: pointer;
+                    outline: none;
                     padding: 16px 36px 18px 36px;
                     justify-content: center;
                     align-items: center;
@@ -656,6 +663,7 @@ section {
                     color: var(--base-white, #FFF);
                     text-align: center;
                     font-weight: 600;
+                    background-color: transparent;
                 }
             }
 
@@ -670,7 +678,6 @@ section {
 }
 
 //  grid styling 
-
 .grid {
     width: 80%;
     margin: 0 auto;
@@ -739,7 +746,6 @@ section {
 }
 
 // Ask styling
-
 .ask {
     width: 80%;
     margin: auto;
@@ -814,9 +820,11 @@ section {
             }
         }
 
-        a {
+        button {
             text-decoration: none;
             display: inline-block;
+            outline: none;
+            background-color: transparent;
             width: 230px;
             height: 60px;
             display: flex;
@@ -891,6 +899,7 @@ section {
     }
 }
 
+// klient section styles
 .klient-section {
     width: 100%;
 
@@ -1005,6 +1014,7 @@ section {
     }
 }
 
+// yuristlar portal
 .yurist-portal {
     width: 80%;
     margin: auto;
@@ -1191,7 +1201,7 @@ section {
                                 }
                             }
 
-                            input[type='submit'] {
+                            input[type='button'] {
                                 padding: 16px 24px 18px 24px;
                                 gap: 10px;
                                 border-radius: 10px;
@@ -1257,6 +1267,7 @@ section {
     }
 }
 
+// footer styles
 footer {
     width: 80%;
     margin: auto;
@@ -1296,6 +1307,7 @@ footer {
     }
 }
 
+// zayavka styles
 .zayavka {
     display: none;
     flex-direction: column;
@@ -1356,6 +1368,149 @@ footer {
     }
 }
 
+// konsultatsiya styles
+.konsultatsiya {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    backdrop-filter: blur(15px);
+    width: 100%;
+    height: 100vh;
+
+    .container {
+        overflow: hidden;
+        display: flex;
+        height: 400px;
+        width: 896px;
+        border-radius: 20px;
+        background: var(--base-white, #FFF);
+        box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+
+        .left {
+            width: 30%;
+            height: 100%;
+            position: relative;
+            background-image: url(./img/Ellipse\ 14.png);
+            background-repeat: no-repeat;
+
+            img {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .right {
+            width: 70%;
+            padding: 30px;
+
+            .top {
+                img {
+                    float: right;
+                    cursor: pointer;
+                }
+            }
+
+            h1 {
+                margin-top: 30px;
+                color: var(--base-black, #140A32);
+                font-weight: 700;
+                letter-spacing: -0.96px;
+                margin-top: 30px;
+            }
+
+            .yurists {
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+
+                p {
+                    margin-left: 20px;
+                    color: var(--base-black, #140A32);
+                    font-weight: 400;
+                }
+            }
+
+            form {
+                .flex-form {
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .input-container {
+                        position: relative;
+                        width: 200px;
+                        height: 60px;
+                        border-radius: 10px;
+                        border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+                        background: var(--base-white, #FFF);
+
+                        input {
+                            font-size: 20px;
+                            width: 100%;
+                            border: none;
+                            background-color: transparent;
+                            outline: none;
+                            padding-left: 15px;
+                            margin-top: 22px;
+                        }
+
+                        #input {
+
+                            &::-webkit-outer-spin-button,
+                            &::-webkit-inner-spin-button {
+                                -webkit-appearance: none;
+                                margin: 0;
+                            }
+                        }
+
+                        label {
+                            position: absolute;
+                            top: 17px;
+                            left: 15px;
+                            color: grey;
+                            transition: all 0.3s ease;
+                            pointer-events: none;
+                        }
+
+                        input:focus~.label,
+                        input:valid~.label {
+                            top: 3px;
+                            font-size: 15px;
+                            color: #acacac;
+                        }
+                    }
+
+                    input[type='button'] {
+                        padding: 16px 24px 18px 24px;
+                        gap: 10px;
+                        border-radius: 10px;
+                        background: var(--base-black, #140A32);
+                        color: var(--base-white, #FFF);
+                        font-weight: 600;
+                        cursor: pointer;
+                        outline: none;
+                        border: none;
+                    }
+                }
+            }
+
+            p {
+                &:nth-child(5) {
+                    color: var(--gray-low, rgba(47, 43, 67, 0.40));
+                    font-size: 12px;
+                    font-weight: 600;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
 li .head-a {
     text-decoration: none;
     color: #acacac;
@@ -1385,4 +1540,51 @@ li .head-a:hover {
 
 .head-a:hover::before {
     width: 80%;
+}
+
+.warning {
+    width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+    position: fixed;
+    display: none;
+    align-items: center;
+    border: 1px solid rgb(160, 160, 160);
+    background-color: #fff;
+    gap: 20px;
+    z-index: 1000;
+    top: 20px;
+    right: 30px;
+
+    
+    img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.warning_anim {
+    animation: error-animation 4s 1;
+
+    @keyframes error-animation {
+        0% {
+            right: -100%;
+        }
+        
+        10% {
+            right: 30px;
+        }
+        
+        90% {
+            right: 30px;
+        }
+
+        100% {
+            right: -100%;
+        }
+    }
 }
