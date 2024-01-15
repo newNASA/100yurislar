@@ -42,7 +42,6 @@ header nav .nav-top .search-bar input {
   background: #e5e5e5;
   outline: none;
   border: none;
-  padding-right: 45px;
 }
 header nav .nav-top .search-bar img {
   transform: translateX(-35px);
@@ -110,6 +109,14 @@ header nav .nav-bottom .right button {
   cursor: pointer;
 }
 
+.url {
+  color: #acacac;
+  font-weight: 400;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+
 .header {
   width: 80%;
   margin: auto;
@@ -118,11 +125,6 @@ header nav .nav-bottom .right button {
 .header .left {
   width: 60%;
   margin: auto;
-}
-.header .left .url {
-  color: #acacac;
-  margin-top: 40px;
-  font-weight: 400;
 }
 .header .left .title {
   color: #140A32;
@@ -228,35 +230,35 @@ section .help p {
 section .freeConsultation {
   width: 100%;
 }
-section .top {
+section .freeConsultation .top {
   margin-top: 80px;
   gap: 15px;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-section .top h2 {
+section .freeConsultation .top h2 {
   color: #140A32;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: -0.96px;
 }
-section .top p {
+section .freeConsultation .top p {
   color: #140A32;
   font-weight: 400;
   line-height: 160%;
   margin-top: 15px;
 }
-section .top .txt {
+section .freeConsultation .top .txt {
   cursor: pointer;
 }
-section .bottom {
+section .freeConsultation .bottom {
   width: 100%;
   display: flex;
   margin-top: 30px;
   justify-content: space-between;
 }
-section .bottom .card {
+section .freeConsultation .bottom .card {
   width: 280px;
   height: 200px;
   display: flex;
@@ -270,29 +272,29 @@ section .bottom .card {
   transition: background 0.5s;
   transition: 0.5s;
 }
-section .bottom .card p {
+section .freeConsultation .bottom .card p {
   color: #140A32;
   font-weight: 400;
 }
-section .bottom .card .phonenumber {
+section .freeConsultation .bottom .card .phonenumber {
   color: #140A32;
   font-size: 20px;
   font-weight: 700;
 }
-section .bottom .card .txt {
+section .freeConsultation .bottom .card .txt {
   color: #33836E;
   font-weight: 600;
 }
-section .bottom .card:hover {
+section .freeConsultation .bottom .card:hover {
   color: #fff;
   cursor: pointer;
   background: #33836E;
   transform: scale(1.05);
 }
-section .bottom .card:hover .txt {
+section .freeConsultation .bottom .card:hover .txt {
   color: #fff;
 }
-section .bottom .card:hover img {
+section .freeConsultation .bottom .card:hover img {
   filter: brightness(2);
 }
 
@@ -300,7 +302,6 @@ section .bottom .card:hover img {
   margin-top: 80px !important;
   width: 80%;
   margin: auto;
-  height: 200px;
   border-radius: 20px;
   background-color: #33836E;
   display: flex;
@@ -625,7 +626,6 @@ section .bottom .card:hover img {
 .ask {
   width: 80%;
   margin: auto;
-  height: 200px;
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -692,9 +692,6 @@ section .bottom .card:hover img {
   background-color: transparent;
   width: 230px;
   height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
   font-size: 18px;
   color: white;
@@ -713,48 +710,6 @@ section .bottom .card:hover img {
   color: #858585;
   font-size: 13px;
   transform: translateY(-45px);
-}
-
-section {
-  width: 80%;
-  margin: 0 auto;
-}
-section .seo {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-section .seo .top {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  height: 200px;
-  overflow: hidden;
-  transition: 0.5s;
-}
-section .seo .top h2 {
-  color: var(--base-black, #140A32);
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: -0.96px;
-}
-section .seo .top p {
-  margin-top: 20px;
-}
-section .seo .bottom {
-  width: 100%;
-  height: 56px;
-  display: flex;
-  color: #33836E;
-  font-weight: 600;
-  align-items: center;
-  border-radius: 10px;
-  background: #E0ECE9;
-  justify-content: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  cursor: pointer;
 }
 
 .klient-section {
