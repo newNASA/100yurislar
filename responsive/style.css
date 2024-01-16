@@ -155,4 +155,77 @@
   .ask {
     display: none;
   }
+  .klient-section .klient .bottom .left, .klient-section .klient .bottom .right {
+    display: none;
+  }
+  .klient-section .klient .bottom .center {
+    width: 90%;
+    margin: auto;
+  }
+  .yurist-portal {
+    width: 90%;
+  }
+  .yurist-portal .bottom {
+    flex-direction: column;
+  }
+  .yurist-portal .bottom .bottom-left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .yurist-portal .bottom .bottom-right {
+    width: 100%;
+  }
+  .yurist-portal .bottom .bottom-right .container {
+    padding: 20px;
+  }
+  .yurist-portal .bottom .bottom-right .container .con-top .online {
+    display: none;
+  }
+  .yurist-portal .bottom .bottom-right .container .con-bottom .flex-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .yurist-portal .bottom .bottom-right .container .con-bottom .flex-form .input-container {
+    width: 100% !important;
+  }
+  footer {
+    width: 90%;
+  }
+  footer .bottom {
+    flex-direction: column;
+  }
+  footer .bottom div {
+    width: 100%;
+  }
+  .warning {
+    width: 350px;
+    padding: 10px;
+  }
+  .konsultatsiya .container {
+    width: 350px;
+  }
+  .konsultatsiya .container .left {
+    display: none;
+  }
+  .konsultatsiya .container .right {
+    width: 100%;
+    padding: 15px;
+  }
+  .konsultatsiya .container .right h1 {
+    font-size: 25px;
+  }
+  .konsultatsiya .container .right .yurists {
+    display: none;
+  }
+  .konsultatsiya .container .right form .flex-form {
+    gap: 10px;
+    flex-direction: column;
+  }
+  .konsultatsiya .container .right form .flex-form .input-container {
+    width: 100%;
+  }
+  .zayavka .container {
+    width: 350px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -727,6 +727,7 @@ section .freeConsultation .bottom .card:hover img {
   letter-spacing: -0.96px;
 }
 .klient-section .klient .bottom {
+  margin-top: 20px;
   overflow: hidden;
   display: flex;
 }
@@ -740,8 +741,6 @@ section .freeConsultation .bottom .card:hover img {
 }
 .klient-section .klient .bottom .left button,
 .klient-section .klient .bottom .right button {
-  width: 24px;
-  height: 24px;
   outline: none;
   border: none;
   border-radius: 50%;
@@ -1111,7 +1110,6 @@ footer .bottom div a {
 .konsultatsiya .container {
   overflow: hidden;
   display: flex;
-  height: 400px;
   width: 896px;
   border-radius: 20px;
   background: var(--base-white, #FFF);
@@ -1119,7 +1117,6 @@ footer .bottom div a {
 }
 .konsultatsiya .container .left {
   width: 30%;
-  height: 100%;
   position: relative;
   background-image: url(./img/Ellipse\ 14.png);
   background-repeat: no-repeat;

@@ -172,7 +172,99 @@
         display: none;
     }
     
-    // .klient-section{
-    //     .
-    // }
+    .klient-section{
+        .klient{
+            .bottom{
+                .left, .right{
+                    display: none;
+                }
+                .center{
+                    width: 90%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    .yurist-portal{
+        width: 90%;
+        .bottom{
+            flex-direction: column;
+            .bottom-left{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .bottom-right{
+                width: 100%;
+                .container{
+                    padding: 20px;
+                    .con-top{
+                        .online{
+                            display: none;
+                        }
+                    }
+                    .con-bottom{
+                        .flex-form{
+                            flex-direction: column;
+                            gap: 10px;
+                            .input-container{
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        width: 90%;
+
+        .bottom{
+            flex-direction: column;
+            div{
+                width: 100%;
+            }
+        }
+    }
+
+    .warning{
+        width: 350px;
+        padding: 10px;
+    }
+
+    .konsultatsiya{
+        .container{
+            width: 350px;
+            .left{
+                display: none;
+            }
+            .right{
+                width: 100%;
+                padding: 15px;
+                h1{
+                    font-size: 25px;
+                }
+                .yurists{
+                    display: none;
+                }
+                form{
+                    .flex-form{
+                        gap: 10px;
+                        flex-direction: column;
+                        .input-container{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .zayavka{
+        .container{
+            width: 350px;
+            text-align: center;
+        }
+    }
 }

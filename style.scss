@@ -867,6 +867,7 @@ section {
         }
 
         .bottom {
+            margin-top: 20px;
             overflow: hidden;
             display: flex;
 
@@ -879,8 +880,6 @@ section {
                 align-items: center;
 
                 button {
-                    width: 24px;
-                    height: 24px;
                     outline: none;
                     border: none;
                     border-radius: 50%;
@@ -1333,7 +1332,6 @@ footer {
     .container {
         overflow: hidden;
         display: flex;
-        height: 400px;
         width: 896px;
         border-radius: 20px;
         background: var(--base-white, #FFF);
@@ -1341,7 +1339,6 @@ footer {
 
         .left {
             width: 30%;
-            height: 100%;
             position: relative;
             background-image: url(./img/Ellipse\ 14.png);
             background-repeat: no-repeat;
@@ -1384,7 +1381,7 @@ footer {
                     font-weight: 400;
                 }
             }
-
+            
             form {
                 .flex-form {
                     margin-top: 20px;
